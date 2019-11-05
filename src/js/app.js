@@ -1,6 +1,9 @@
 import '../css/style.css';
 import Trivia from './Trivia';
 
+const intro = document.getElementById('intro');
+const start = document.getElementById('start');
+
 const questions = [
   {
     id: 1,
@@ -72,10 +75,13 @@ const trivia = new Trivia({
   mode: 'perception',
 });
 
-trivia.init();
+start.addEventListener('click', () => {
+  intro.remove();
+  trivia.init();
+});
 
 function handleTriviaEnd() {
-  trivia.el.style.display = 'none';
+  trivia.el.remove();
   document.querySelector('.checkout').style.display = 'block';
 }
 

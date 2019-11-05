@@ -44,7 +44,7 @@ export default class Trivia {
     this.slots.progress.classList.add('trivia-progress');
     this.slots.questions.classList.add('trivia-questions');
     this.slots.score.classList.add('trivia-score');
-    this.slots.button.classList.add('trivia-next');
+    this.slots.button.classList.add('button');
 
     this.el.appendChild(this.slots.progress);
     this.el.appendChild(this.slots.questions);
