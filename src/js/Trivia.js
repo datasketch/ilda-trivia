@@ -160,7 +160,7 @@ export default class Trivia {
 
   renderFeedback() {
     const question = this.questions[this.step - 1];
-    const feedbackText = this.isCorrectAnswer ? question.whenCorrect : question.whenCorrect;
+    const feedbackText = this.isCorrectAnswer ? question.whenCorrect : question.whenIncorrect;
 
     const feedback = document.createElement('div');
 
