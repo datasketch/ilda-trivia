@@ -7,7 +7,7 @@ const start = document.getElementById('start');
 const questions = [
   {
     id: 1,
-    text: '¿Qué es un feminicidio?',
+    text: '¿Qué es un femicidio?',
     choices: [
       'Es la muerte violenta de una mujer producto de un asalto, un robo o incluso un accidente de tránsito.',
       'Es la muerte violenta de una mujer donde el responsable actuó negligentemente o de forma intencional para dañar su integridad.',
