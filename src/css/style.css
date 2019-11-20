@@ -11,10 +11,18 @@ html {
   box-sizing: border-box;
   color: #ffffff;
   font-family: 'Raleway', sans-serif;
+  height: 100%;
 }
 
 body {
-  padding: 2rem 0;
+  height: 100%;
+}
+
+body.is-feedback {
+  background-image: url('../images/answer.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 a {
@@ -32,6 +40,10 @@ ol, ul {
 
 .text-center {
   text-align: center;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-portica {
@@ -122,19 +134,40 @@ ol, ul {
   line-height: 1.5;
 }
 
-.feedback br {
-  margin-bottom: 1.25rem;
+.feedback h2 {
+  display: inline-block;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
-.checkout,
-#intro {
+.feedback h2:before {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  content: '';
+  height: 80px;
+  left: 100%;
+  position: absolute;
+  transform: translateX(0.5rem);
+  width: 80px;
+}
+
+.feedback h2.is-incorrect:before {
+  background-image: url('../images/incorrecto.png');
+}
+
+.feedback h2.is-correct:before {
+  background-image: url('../images/correcto.png');
+}
+
+.checkout {
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .checkout-text p:not(:first-child),
-.checkout-credits p,
-#intro p {
+.checkout-credits p {
   margin-top: 1rem;
 }
 
@@ -145,4 +178,78 @@ ol, ul {
 .checkout-share,
 .checkout-credits {
   margin-top: 1.5rem;
+}
+
+.intro-title {
+  background-image: url('../images/cover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 1fr;
+  font-size: 1rem;
+}
+
+#intro p {
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+#intro p:first-of-type {
+  margin-top: 0;
+}
+
+.intro-title {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.intro-body {
+  padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #intro {
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1.5rem;
+    height: 100%;
+    font-size: 1rem;
+  }
+  .intro-title {
+    padding: 6rem 2rem;
+    font-size: 1.25rem;
+    align-items: flex-start;
+  }
+  .intro-body {
+    padding: 0 1rem;
+    place-self: center;
+  }
+  .intro-body-content {
+    max-width: 24rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #intro {
+    font-size: 1.25rem;
+  }
+  .intro-title {
+    font-size: 1.5rem;
+  }
+  .intro-body-content {
+    max-width: 32rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .intro-title {
+    font-size: 1.875rem;
+  }
 }

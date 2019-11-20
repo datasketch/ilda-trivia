@@ -40,11 +40,13 @@ export default class Trivia {
     this.slots.questions = document.createElement('div');
     this.slots.score = document.createElement('div');
     this.slots.button = document.createElement('button');
+    this.slots.feedback = document.createElement('div');
 
     this.slots.progress.classList.add('trivia-progress');
     this.slots.questions.classList.add('trivia-questions');
     this.slots.score.classList.add('trivia-score');
     this.slots.button.classList.add('button');
+    this.slots.feedback.classList.add('feedback');
 
     this.el.appendChild(this.slots.progress);
     this.el.appendChild(this.slots.questions);
@@ -58,9 +60,7 @@ export default class Trivia {
   }
 
   updateProgress() {
-    // this.slots.button.textContent = (this.step + 1) === this.questions.length
-    //   ? 'Finalizar'
-    //   : 'Continuar';
+    this.slots.progress.style.opacity = '1';
     this.slots.progress.textContent = `${this.step + 1} de ${this.questions.length}`;
   }
 
@@ -122,11 +122,14 @@ export default class Trivia {
   }
 
   endGame() {
+    document.body.classList.remove('is-feedback');
     const TriviaEvent = new CustomEvent('ended');
     this.el.dispatchEvent(TriviaEvent);
   }
 
   renderQuestion() {
+    document.body.classList.remove('is-feedback');
+
     const question = this.questions[this.step];
 
     const triviaQuestion = document.createElement('div');
@@ -162,12 +165,12 @@ export default class Trivia {
     const question = this.questions[this.step - 1];
     const feedbackText = this.isCorrectAnswer ? question.whenCorrect : question.whenIncorrect;
 
-    const feedback = document.createElement('div');
+    this.slots.progress.style.opacity = '0';
+    this.slots.feedback.innerHTML = md.render(feedbackText);
+    this.slots.feedback.querySelector('h2').classList.add(this.isCorrectAnswer ? 'is-correct' : 'is-incorrect');
 
-    feedback.classList.add('feedback');
+    document.body.classList.add('is-feedback');
 
-    feedback.innerHTML = md.render(feedbackText);
-
-    return feedback;
+    return this.slots.feedback;
   }
 }

@@ -14,9 +14,8 @@ const questions = [
       'Es la muerte violenta de una mujer por su género. El crimen puede cometerlo un familiar, su pareja o cualquier otra persona conocida o desconocida. Ocurre tanto en un espacio privado como público. También puede ser perpetrado o tolerado por el Estado y sus agentes.',
     ],
     answer: [2],
-    whenCorrect: '¡Acertaste! La clave para distinguir un femicidio de un homicidio radica en que a la mujer se le quita la vida por causa de su género. El Mecanismo de Seguimiento de la Convención de Belém do Pará define Femicidio como:\n"La muerte violenta de mujeres por razones de género ya sea que tenga lugar dentro de la familia, unidad doméstica o en cualquier otra relación interpersonal, en la comunidad, por parte de cualquier persona, o que sea perpetrada o tolerada por el Estado y sus agentes, por actos de acción u omisión."',
-    whenIncorrect: `Tu opción no es correcta.  La clave para distinguir un femicidio de un homicidio radica en que a la mujer se le quita la vida por causa de su género. De acuerdo con el Mecanismo de Seguimiento de la Convención de Belém do Pará, el Femicidio se define como: 
-    'La muerte violenta de mujeres por razones de género ya sea que tenga lugar dentro de la familia, unidad doméstica o en cualquier otra relación interpersonal, en la comunidad, por parte de cualquier persona, o que sea perpetrada o tolerada por el Estado y sus agentes, por actos de acción u omisión'.`,
+    whenCorrect: '## ¡Acertaste!\nLa clave para distinguir un femicidio de un homicidio radica en que a la mujer se le quita la vida por causa de su género. El Mecanismo de Seguimiento de la Convención de Belém do Pará define Femicidio como:\n"La muerte violenta de mujeres por razones de género ya sea que tenga lugar dentro de la familia, unidad doméstica o en cualquier otra relación interpersonal, en la comunidad, por parte de cualquier persona, o que sea perpetrada o tolerada por el Estado y sus agentes, por actos de acción u omisión.',
+    whenIncorrect: '## Tu opción no es correcta.\nLa clave para distinguir un femicidio de un homicidio radica en que a la mujer se le quita la vida por causa de su género. De acuerdo con el Mecanismo de Seguimiento de la Convención de Belém do Pará, el Femicidio se define como: "La muerte violenta de mujeres por razones de género ya sea que tenga lugar dentro de la familia, unidad doméstica o en cualquier otra relación interpersonal, en la comunidad, por parte de cualquier persona, o que sea perpetrada o tolerada por el Estado y sus agentes, por actos de acción u omisión".',
     mode: 'singular',
   },
   {
@@ -24,8 +23,8 @@ const questions = [
     text: 'Hasta 2017, ¿cuántos países de Latinoamérica y el Caribe han aprobado leyes o reformas al Código Penal para castigar el femicidio?',
     choices: [15, 18, 9],
     answer: [1],
-    whenCorrect: '¡Acertaste! Hasta 2017, 18 países han aprobado mecanismos legales para castigar el femicidio. Estos son: Costa Rica, Guatemala, Chile, Argentina, El Salvador, México, Nicaragua, Bolivia, Honduras, Panamá, Ecuador, República Dominicana, Venezuela, Brasil, Colombia, Perú, Paraguay y Uruguay.',
-    whenIncorrect: 'Tu opción no es correcta. Hasta 2017, 18 países han aprobado mecanismos legales para castigar el femicidio. Estos son: Costa Rica, Guatemala, Chile, Argentina, El Salvador, México, Nicaragua, Bolivia, Honduras, Panamá, Ecuador, República Dominicana, Venezuela, Brasil, Colombia, Perú, Paraguay y Uruguay.',
+    whenCorrect: '## ¡Acertaste!\nHasta 2017, 18 países han aprobado mecanismos legales para castigar el femicidio. Estos son: Costa Rica, Guatemala, Chile, Argentina, El Salvador, México, Nicaragua, Bolivia, Honduras, Panamá, Ecuador, República Dominicana, Venezuela, Brasil, Colombia, Perú, Paraguay y Uruguay.',
+    whenIncorrect: '## Tu opción no es correcta.\nHasta 2017, 18 países han aprobado mecanismos legales para castigar el femicidio. Estos son: Costa Rica, Guatemala, Chile, Argentina, El Salvador, México, Nicaragua, Bolivia, Honduras, Panamá, Ecuador, República Dominicana, Venezuela, Brasil, Colombia, Perú, Paraguay y Uruguay.',
     mode: 'singular',
   },
   {
@@ -37,8 +36,8 @@ const questions = [
       'Una sola definición, pero circunstancias diversas para tipificarlo, según la legislación de cada país.',
     ],
     answer: [1],
-    whenCorrect: '¡Acertaste! La definición de femicidio y las circunstancias para penalizarlo no son iguales en los países. En algunos solo se contemplan los crímenes cometidos por la pareja o la expareja de la víctima, ya sea dentro o fuera del matrimonio (femicidio íntimo).  En otros, el delito se extiende no solo a los íntimos, también incluye a los de conocidos y desconocidos en relaciones de confianza o de poder, con violencia sexual o privación de libertad de la víctima.',
-    whenIncorrect: 'Tu opción no es correcta. La definición de femicidio y las circunstancias para penalizarlo no son iguales en los países. En algunos solo se contemplan los crímenes cometidos por la pareja o la expareja de la víctima, ya sea dentro o fuera del matrimonio (femicidio íntimo).  En otros, el delito se extiende no solo a los íntimos, también incluye a los de conocidos y desconocidos en relaciones de confianza o de poder, con violencia sexual o privación de libertad de la víctima.',
+    whenCorrect: '## ¡Acertaste!\nLa definición de femicidio y las circunstancias para penalizarlo no son iguales en los países. En algunos solo se contemplan los crímenes cometidos por la pareja o la expareja de la víctima, ya sea dentro o fuera del matrimonio (femicidio íntimo).  En otros, el delito se extiende no solo a los íntimos, también incluye a los de conocidos y desconocidos en relaciones de confianza o de poder, con violencia sexual o privación de libertad de la víctima.',
+    whenIncorrect: '## Tu opción no es correcta.\nLa definición de femicidio y las circunstancias para penalizarlo no son iguales en los países. En algunos solo se contemplan los crímenes cometidos por la pareja o la expareja de la víctima, ya sea dentro o fuera del matrimonio (femicidio íntimo).  En otros, el delito se extiende no solo a los íntimos, también incluye a los de conocidos y desconocidos en relaciones de confianza o de poder, con violencia sexual o privación de libertad de la víctima.',
     mode: 'singular',
   },
   {
@@ -50,8 +49,8 @@ const questions = [
       'Ambas opciones son correctas.',
     ],
     answer: [2],
-    whenCorrect: '¡Acertaste! Ambas opciones son correctas',
-    whenIncorrect: 'Tu opción no está del todo completa. Dos de las consecuencias de la falta de uniformidad en la definición y circunstancias del femicidio en la región recaen en las estadísticas:  No todos los que podrían ser femicidios están siendo incluidos en los datos de cada nación. Por lo tanto, no es posible comparar cifras entre países y conocer con mayor precisión la magnitud de estos crímenes por causa de género en la región.',
+    whenCorrect: '## ¡Acertaste!\nAmbas opciones son correctas',
+    whenIncorrect: '## Tu opción no está del todo completa.\nDos de las consecuencias de la falta de uniformidad en la definición y circunstancias del femicidio en la región recaen en las estadísticas:  No todos los que podrían ser femicidios están siendo incluidos en los datos de cada nación. Por lo tanto, no es posible comparar cifras entre países y conocer con mayor precisión la magnitud de estos crímenes por causa de género en la región.',
     mode: 'singular',
   },
   {
@@ -63,8 +62,8 @@ const questions = [
       'Ambas opciones son correctas.',
     ],
     answer: [2],
-    whenCorrect: '¡Acertaste! Ambas opciones son correctas',
-    whenIncorrect: 'Tu opción no está del todo completa. Los países tienen ambas alternativas: La de reformar sus leyes para unificar el concepto de femicidio, las circunstancias para penalizarlo y las variables para recopilar estadísticas. O bien, sin necesidad de lo anterior, podrían implementar un mismo estándar de recolección de datos. Lo cual permitiría que las estadísticas sobre femicidios sí sean comparables entre países.',
+    whenCorrect: '## ¡Acertaste!\nAmbas opciones son correctas',
+    whenIncorrect: '## Tu opción no está del todo completa.\nLos países tienen ambas alternativas: La de reformar sus leyes para unificar el concepto de femicidio, las circunstancias para penalizarlo y las variables para recopilar estadísticas. O bien, sin necesidad de lo anterior, podrían implementar un mismo estándar de recolección de datos. Lo cual permitiría que las estadísticas sobre femicidios sí sean comparables entre países.',
     mode: 'singular',
   },
 ];
